@@ -1,3 +1,158 @@
-h1 { margin: 0; }
-ul { list-style: none; padding: 0; }
-li { margin: 8px 0; }
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px
+}
+
+@media (max-width:900px) {
+  .hero-inner {
+    grid-template-columns: 1fr
+  }
+
+  .grid {
+    grid-template-columns: 1fr
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 14px
+  }
+} 
+
+.hero {
+  padding: 56px 0;
+  background: linear-gradient(180deg, rgba(11, 114, 133, 0.06), transparent);
+  background-image: url('/assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 36, 0.06), rgba(247, 250, 252, 0.55));
+  pointer-events: none
+}
+
+.hero {
+  position: relative
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+  align-items: center
+}
+
+.hero-copy {
+  background-color: rgba(117, 190, 218, 0.75);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-copy h1 {
+  font-size: 2rem;
+  margin: 0 0 12px
+}
+
+.lead {
+  color: black;
+  font-weight: 800;
+  margin-bottom: 18px
+}
+
+.hero-card {
+  background:var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 36, 0.06)
+}
+
+.hero-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn,
+.email-us-button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--accent-600);
+  text-decoration: none;
+  border: 1px solid rgba(11, 114, 133, 0.12);
+  font-weight: 600
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 18px rgba(11, 114, 133, 0.12)
+}
+
+.btn:hover {
+  background: var(--accent-600);
+  color: #fff;
+  border-color: rgba(10, 107, 116, 0.12);
+  box-shadow: 0 6px 18px rgba(10, 107, 116, 0.12);
+}
+
+.services {
+  padding: 40px 0;
+  background-color: #e9e9e9;
+}
+
+.services h2 {
+  margin: 0 28px 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(15, 23, 36, 0.04)
+}
+
+.service-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px
+}
+
+.card h4 {
+  margin: 0 0 8px
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted)
+}
