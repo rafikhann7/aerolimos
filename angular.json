@@ -29,5 +29,8 @@
       }
     }
   },
-  "defaultProject": "aerolimos"
+  "defaultProject": "aerolimos",
+  "cli": {
+    "analytics": false
+  }
 }
