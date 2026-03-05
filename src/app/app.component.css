@@ -3,28 +3,7 @@
   margin: 0 auto;
   padding: 0 20px
 }
-
-@media (max-width:900px) {
-  .hero-inner {
-    grid-template-columns: 1fr
-  }
-
-  .grid {
-    grid-template-columns: 1fr
-  }
-
-  .header-inner {
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start
-  }
-
-  .nav a {
-    margin-left: 0;
-    margin-right: 14px
-  }
-} 
-
+ 
 .hero {
   padding: 56px 0;
   background: linear-gradient(180deg, rgba(11, 114, 133, 0.06), transparent);
@@ -120,7 +99,7 @@
 
 .services {
   padding: 40px 0;
-  background-color: #e9e9e9;
+  background-color: var(--bg);
 }
 
 .services h2 {
