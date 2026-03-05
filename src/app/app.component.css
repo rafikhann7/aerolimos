@@ -25,6 +25,16 @@
   align-items: center
 }
 
+@media (max-width:900px) {
+  .hero-inner {
+    grid-template-columns: 1fr
+  }
+
+  .grid {
+    grid-template-columns: 1fr
+  } 
+} 
+
 .hero-copy {
   background-color: rgba(117, 190, 218, 0.75);
   border-radius: 8px;
