@@ -4,7 +4,19 @@
       <h1>Comfortable airport transfers — on time, every time</h1>
       <p class="lead">Professional chauffeurs · Modern fleet · Competitive rates</p>
       <div class="cta">
-        <a class="btn primary" href="tel:+15145948626">Call 514-594-8626</a>
+        <div class="call-dropdown" (clickOutside)="closeCallMenu()">
+          <button class="btn primary" (click)="toggleCallMenu($event)">📞 Call Us</button>
+          <div class="call-menu" *ngIf="showCallMenu">
+            <a class="call-menu-item" href="tel:+15145948626">
+              <span class="driver-name">Rafik Hanna</span>
+              <span class="driver-phone">514-594-8626</span>
+            </a>
+            <a class="call-menu-item" href="tel:+15149834219">
+              <span class="driver-name">Mazen Chehaiber</span>
+              <span class="driver-phone">514-983-4219</span>
+            </a>
+          </div>
+        </div>
         <a class="btn primary" href="mailto:aerolimosmontreal@gmail.com">Email Us</a>
       </div>
     </div>

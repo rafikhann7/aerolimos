@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { ClickOutsideDirective } from './click-outside.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ClickOutsideDirective],
   imports: [BrowserModule],
   bootstrap: [AppComponent]
 })
