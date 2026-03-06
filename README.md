@@ -9,4 +9,4 @@ npm install
 npx ng serve --open
 ```
 
-Contact displayed in the app: rafikhanna7@aol.com and 5145948626
+Contact displayed in the app: aerolimosmontreal@gmail.com and 5145948626

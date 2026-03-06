@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'AeroLimos';
-  email = 'rafikhanna7@aol.com';
+  email = 'aerolimosmontreal@gmail.com';
   phone = '5145948626';
 
   ngOnInit(): void {
